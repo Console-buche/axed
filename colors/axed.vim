@@ -1,4 +1,3 @@
-
 " console-buche/axed.vim
 "
 " A vim colorscheme that might not be for all's eyes. But it's mine. And my eyes love it.
@@ -39,6 +38,9 @@ let s:fg_dark_gray      = ' guifg=#4a4a4a ctermfg=238'     " Dark gray for inlay
 let s:fg_operator       = ' guifg=#F5DEB3 ctermfg=54'      " Wheat for operators (keywords)
 let s:bg_none           = ' guibg=NONE'                    " Transparent background
 let s:bg_cursorline     = ' guibg=#202020'                 " Subtle dark gray for cursor line
+let s:bg_search         = ' guibg=#404040'                 " Background for search matches
+let s:bg_incsearch      = ' guibg=#606060'                 " Background for incremental search match
+let s:fg_incsearch      = ' guifg=#ffcc00'                 " Foreground for incremental search match
 
 " Special colors
 let s:sp_red      = ' guisp=#d06a75 ctermfg=167'
@@ -63,7 +65,8 @@ execute 'hi CursorLine' . s:bg_cursorline . s:none
 execute 'hi MatchParen' . s:fg_bright_white . s:bg_none . s:bold
 execute 'hi NonText' . s:fg_dim_white . s:bg_none . s:none
 execute 'hi WildMenu' . s:fg . s:bg_none . s:none
-execute 'hi Search' . s:fg . s:bg_none . s:none
+execute 'hi Search' . s:fg_bright_white . s:bg_search . s:none
+execute 'hi IncSearch' . s:fg_incsearch . s:bg_incsearch . s:bold
 execute 'hi Folded' . s:fg_bright_white . s:bg_none . s:none
 execute 'hi Pmenu' . s:fg_dim_white . s:bg_none . s:none
 execute 'hi PmenuSel' . s:fg . s:bg_none . s:none
