@@ -23,7 +23,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = 'buche'
+let g:colors_name = 'axed'
 
 " Colors from the provided palette
 let s:fg                = ' guifg=#5A727A ctermfg=252'     " Default foreground (teal)
@@ -33,7 +33,8 @@ let s:fg_light_green    = ' guifg=#7FA377 ctermfg=220'     " Light green for met
 let s:fg_medium_gray    = ' guifg=#6A6A6A ctermfg=54'      " Medium gray for keywords
 let s:fg_soft_yellow    = ' guifg=#D9B566 ctermfg=221'     " Soft yellow for constants
 let s:fg_gray           = ' guifg=#909090 ctermfg=145'     " Gray for object keys and properties
-let s:fg_light_teal     = ' guifg=#708585 ctermfg=238'     " Light teal for types
+" let s:fg_light_teal     = ' guifg=#708585 ctermfg=238'     " Light teal for types
+let s:fg_wheat          = ' guifg=#F5DEB3 ctermfg=238'     " Weat for types
 let s:fg_dark_gray      = ' guifg=#4a4a4a ctermfg=238'     " Dark gray for inlay hints
 let s:fg_operator       = ' guifg=#F5DEB3 ctermfg=54'      " Wheat for operators (keywords)
 let s:bg_none           = ' guibg=NONE'                    " Transparent background
@@ -89,7 +90,7 @@ execute 'hi SpellLocal' . ' ctermbg=NONE' . s:undercurl . s:sp_cyan
 execute 'hi Comment' . s:fg_dim_white . s:bg_none . s:none
 execute 'hi String' . s:fg_soft_yellow . s:bg_none . s:none
 execute 'hi Number' . s:fg_soft_yellow . s:bg_none . s:none
-execute 'hi Type' . s:fg_light_teal . s:bg_none . s:none
+execute 'hi Type' . s:fg_wheat . s:bg_none . s:none 
 execute 'hi PreProc' . s:fg_dim_white . s:bg_none . s:none
 execute 'hi Underlined' . s:fg . s:bg_none . s:underline
 execute 'hi Special' . s:fg_dim_white . s:bg_none . s:none
