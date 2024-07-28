@@ -29,8 +29,8 @@ let g:colors_name = 'axed'
 let s:fg                = ' guifg=#5A727A ctermfg=252'     " Default foreground (teal)
 let s:fg_bright_white   = ' guifg=#e0e0e0 ctermfg=255'     " Bright white
 let s:fg_dim_white      = ' guifg=#909090 ctermfg=246'     " Dim white
-let s:fg_light_green    = ' guifg=#7FA377 ctermfg=220'     " Light green for method calls
-let s:fg_medium_gray    = ' guifg=#f2ba0e ctermfg=54'      " Medium gray for keywords
+let s:fg_light_green    = ' guifg=#FFE5B4 ctermfg=220'     " Light green for method calls
+let s:fg_medium_gray    = ' guifg=#FFC300 ctermfg=54'      " Medium gray for keywords
 let s:fg_soft_yellow    = ' guifg=#D9B566 ctermfg=221'     " Soft yellow for constants
 let s:fg_gray           = ' guifg=#909090 ctermfg=145'     " Gray for object keys and properties
 " let s:fg_light_teal     = ' guifg=#708585 ctermfg=238'     " Light teal for types
