@@ -36,7 +36,7 @@ let s:fg_gray           = ' guifg=#909090 ctermfg=145'     " Gray for object key
 " let s:fg_light_teal     = ' guifg=#708585 ctermfg=238'     " Light teal for types
 let s:fg_wheat          = ' guifg=#F5DEB3 ctermfg=238'     " Weat for types
 let s:fg_dark_gray      = ' guifg=#4a4a4a ctermfg=238'     " Dark gray for inlay hints
-let s:fg_operator       = ' guifg=#F5DEB3 ctermfg=54'      " Wheat for operators (keywords)
+let s:fg_operator       = ' guifg=#F4C430 ctermfg=54'      " Wheat for operators (keywords)
 let s:bg_none           = ' guibg=NONE'                    " Transparent background
 let s:bg_cursorline     = ' guibg=#202020'                 " Subtle dark gray for cursor line
 let s:bg_search         = ' guibg=#404040'                 " Background for search matches
