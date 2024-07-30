@@ -16,34 +16,33 @@ endif
 let g:colors_name = 'axed'
 
 " Colors from the provided palette
-let s:fg                = ' guifg=#5A727A ctermfg=252'     " Default foreground 
-let s:fg_bright_white   = ' guifg=#e0e0e0 ctermfg=255'
+let s:fg                = ' guifg=#CCCCCC ctermfg=252'     " Default foreground 
+let s:fg_none           = ' guifg=NONE ctermfg=NONE'
+let s:fg_bright_white   = ' guifg=#E0E0E0 ctermfg=255'
 let s:fg_dim_white      = ' guifg=#909090 ctermfg=246'
-let s:fg_light_green    = ' guifg=#D8AE48 ctermfg=220'     " method calls
-let s:fg_medium_gray    = ' guifg=#CCDB20 ctermfg=54'      " keywords
-let s:fg_soft_yellow    = ' guifg=#EFD1A8 ctermfg=221'     " constants
-let s:fg_gray           = ' guifg=#4a4a4a ctermfg=145'     " keys and properties
-" let s:fg_light_teal     = ' guifg=#708585 ctermfg=238'     " types
+let s:fg_light_yellow   = ' guifg=#AAAAAA ctermfg=220'     " method calls
+let s:fg_medium_gray    = ' guifg=#F4C430 ctermfg=246'     " keywords
+let s:fg_soft_yellow    = ' guifg=#EADDCA ctermfg=221'     " constants
+let s:fg_gray           = ' guifg=#4A4A4A ctermfg=145'     " keys and properties
 let s:fg_wheat          = ' guifg=#D8D1B7 ctermfg=238'     " types
-let s:fg_dark_gray      = ' guifg=#73204D ctermfg=238'     " inlay hints
-let s:fg_operator       = ' guifg=#4a4a4a ctermfg=54'      " operators 
+let s:fg_dark_gray      = ' guifg=#737373 ctermfg=238'     " inlay hints
+let s:fg_operator       = ' guifg=#4A4A4A ctermfg=54'      " operators 
 let s:bg_none           = ' guibg=NONE'                    " Transparent background
 let s:bg_cursorline     = ' guibg=#202020'                 " cursor line
-let s:bg_search         = ' guibg=#404040'                 " search matches
-let s:bg_incsearch      = ' guibg=#606060'                 " incremental search match
-let s:fg_incsearch      = ' guifg=#ffcc00'                 " incremental search match
+let s:bg_search         = ' guibg=#303030'                 " search matches
+let s:bg_incsearch      = ' guibg=#404040'                 " incremental search match
+let s:fg_incsearch      = ' guifg=#CCCC33'                 " incremental search match
 
 " Special colors
-let s:sp_red      = ' guisp=#d06a75 ctermfg=167'
-let s:sp_magenta  = ' guisp=#b86b8e ctermfg=176'
-let s:sp_blue     = ' guisp=#4E78A2 ctermfg=74'
-let s:sp_cyan     = ' guisp=#4E8A92 ctermfg=73'
+let s:sp_red            = ' guisp=#D06A75 ctermfg=167'
+let s:sp_magenta        = ' guisp=#B86B8E ctermfg=176'
+let s:sp_cyan           = ' guisp=#4E8A92 ctermfg=73'
 
 " Modifiers
-let s:bold        = ' gui=bold'
-let s:none        = ' gui=none cterm=none'
-let s:underline   = ' gui=underline'
-let s:undercurl   = ' gui=undercurl'
+let s:bold              = ' gui=bold'
+let s:none              = ' gui=none cterm=none'
+let s:underline         = ' gui=underline'
+let s:undercurl         = ' gui=undercurl'
 
 " General highlight groups
 execute 'hi Normal' . s:fg . s:bg_none
@@ -73,7 +72,7 @@ hi! link FoldColumn Folded
 " Spellchecking highlight groups
 execute 'hi SpellBad' . ' ctermbg=NONE' . s:undercurl . s:sp_red
 execute 'hi SpellRare' . ' ctermbg=NONE' . s:undercurl . s:sp_magenta
-execute 'hi SpellCap' . ' ctermbg=NONE' . s:undercurl . s:sp_blue
+execute 'hi SpellCap' . ' ctermbg=NONE' . s:undercurl . s:sp_cyan
 execute 'hi SpellLocal' . ' ctermbg=NONE' . s:undercurl . s:sp_cyan
 
 " Syntax highlight groups
@@ -88,7 +87,7 @@ execute 'hi Error' . s:fg_bright_white . s:bg_none . s:none
 
 execute 'hi Keyword' . s:fg_medium_gray . s:bg_none . s:none
 execute 'hi Constant' . s:fg_soft_yellow . s:bg_none . s:none
-execute 'hi Function' . s:fg_light_green . s:bg_none . s:none
+execute 'hi Function' . s:fg_light_yellow . s:bg_none . s:none
 execute 'hi Identifier' . s:fg_gray . s:bg_none . s:none
 execute 'hi Operator' . s:fg_operator . s:bg_none . s:none
 
@@ -112,9 +111,9 @@ hi! link xmlAttrib Normal
 hi! link sqlKeyword Type
 
 " Diff highlight groups
-let s:diff_red    = ' guifg=#d06a75 guibg=NONE gui=NONE ctermfg=167 ctermbg=NONE'
+let s:diff_red    = ' guifg=#D06A75 guibg=NONE gui=NONE ctermfg=167 ctermbg=NONE'
 let s:diff_green  = ' guifg=#7EA07A guibg=NONE ctermfg=149 ctermbg=NONE'
-let s:diff_purple = ' guifg=#a06a8e guibg=NONE ctermfg=176 ctermbg=NONE'
+let s:diff_purple = ' guifg=#A06A8E guibg=NONE ctermfg=176 ctermbg=NONE'
 
 execute 'hi DiffAdd' . s:diff_green
 execute 'hi DiffDelete' . s:diff_red
@@ -124,3 +123,9 @@ execute 'hi DiffText' . s:fg_bright_white . s:bg_none . s:none
 " Linking diff highlight groups
 hi! link diffAdded DiffAdd
 hi! link diffRemoved DiffDelete
+
+" Cursor highlight groups
+execute 'hi Cursor guifg=NONE guibg=#FFFF00'
+execute 'hi lCursor guifg=NONE guibg=#FFFF00'
+execute 'hi CursorInsert guifg=NONE guibg=#FF5733'
+execute 'hi lCursorInsert guifg=NONE guibg=#FF5733'
