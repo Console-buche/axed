@@ -5,16 +5,6 @@
 "
 " IMPORTANT: initially forked from awesome Alligator/accent.vim plugin
 "
-" Colors and their usage:
-" - Wheat (#F5DEB3): Operators (keywords)
-" - Teal (#5A727A): Default foreground text
-" - Light Teal (#708585): Types
-" - Light Green (#7FA377): Method calls
-" - Soft Yellow (#D9B566): Constants (strings, numbers, enums)
-" - Gray (#909090): Object keys and properties
-" - Dark Gray (#4a4a4a): Inlay hints
-" - Subtle Dark Gray (#202020): Cursor line
-" - Medium Gray (#6A6A6A): Keywords
 
 set background=dark
 hi clear
@@ -26,22 +16,22 @@ endif
 let g:colors_name = 'axed'
 
 " Colors from the provided palette
-let s:fg                = ' guifg=#5A727A ctermfg=252'     " Default foreground (teal)
-let s:fg_bright_white   = ' guifg=#e0e0e0 ctermfg=255'     " Bright white
-let s:fg_dim_white      = ' guifg=#909090 ctermfg=246'     " Dim white
-let s:fg_light_green    = ' guifg=#D8AE48 ctermfg=220'     " Light green for method calls
-let s:fg_medium_gray    = ' guifg=#CCDB20 ctermfg=54'      " Medium gray for keywords
-let s:fg_soft_yellow    = ' guifg=#EFD1A8 ctermfg=221'     " Soft yellow for constants
-let s:fg_gray           = ' guifg=#4a4a4a ctermfg=145'     " Gray for object keys and properties
-" let s:fg_light_teal     = ' guifg=#708585 ctermfg=238'     " Light teal for types
-let s:fg_wheat          = ' guifg=#D8D1B7 ctermfg=238'     " Weat for types
-let s:fg_dark_gray      = ' guifg=#73204D ctermfg=238'     " Dark gray for inlay hints
-let s:fg_operator       = ' guifg=#4a4a4a ctermfg=54'      " Wheat for operators 
+let s:fg                = ' guifg=#5A727A ctermfg=252'     " Default foreground 
+let s:fg_bright_white   = ' guifg=#e0e0e0 ctermfg=255'
+let s:fg_dim_white      = ' guifg=#909090 ctermfg=246'
+let s:fg_light_green    = ' guifg=#D8AE48 ctermfg=220'     " method calls
+let s:fg_medium_gray    = ' guifg=#CCDB20 ctermfg=54'      " keywords
+let s:fg_soft_yellow    = ' guifg=#EFD1A8 ctermfg=221'     " constants
+let s:fg_gray           = ' guifg=#4a4a4a ctermfg=145'     " keys and properties
+" let s:fg_light_teal     = ' guifg=#708585 ctermfg=238'     " types
+let s:fg_wheat          = ' guifg=#D8D1B7 ctermfg=238'     " types
+let s:fg_dark_gray      = ' guifg=#73204D ctermfg=238'     " inlay hints
+let s:fg_operator       = ' guifg=#4a4a4a ctermfg=54'      " operators 
 let s:bg_none           = ' guibg=NONE'                    " Transparent background
-let s:bg_cursorline     = ' guibg=#202020'                 " Subtle dark gray for cursor line
-let s:bg_search         = ' guibg=#404040'                 " Background for search matches
-let s:bg_incsearch      = ' guibg=#606060'                 " Background for incremental search match
-let s:fg_incsearch      = ' guifg=#ffcc00'                 " Foreground for incremental search match
+let s:bg_cursorline     = ' guibg=#202020'                 " cursor line
+let s:bg_search         = ' guibg=#404040'                 " search matches
+let s:bg_incsearch      = ' guibg=#606060'                 " incremental search match
+let s:fg_incsearch      = ' guifg=#ffcc00'                 " incremental search match
 
 " Special colors
 let s:sp_red      = ' guisp=#d06a75 ctermfg=167'
