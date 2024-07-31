@@ -1,10 +1,3 @@
-" console-buche/axed.vim
-"
-" A vim colorscheme that might not be for all's eyes. But it's mine. And my eyes love it.
-" Feel free to use and adapt as you wish. Your eyes should love what they see. Make them happy.
-"
-" IMPORTANT: initially forked from awesome Alligator/accent.vim plugin
-"
 
 set background=dark
 hi clear
@@ -25,13 +18,15 @@ let s:fg_medium_gray    = ' guifg=#F4C430 ctermfg=246'     " keywords
 let s:fg_soft_yellow    = ' guifg=#EADDCA ctermfg=221'     " constants
 let s:fg_gray           = ' guifg=#4A4A4A ctermfg=145'     " keys and properties
 let s:fg_wheat          = ' guifg=#D8D1B7 ctermfg=238'     " types
-let s:fg_dark_gray      = ' guifg=#8B8000 ctermfg=238'     " inlay hints
+let s:fg_dark_gray      = ' guifg=#737373 ctermfg=238'     " inlay hints
 let s:fg_operator       = ' guifg=#4A4A4A ctermfg=54'      " operators 
 let s:bg_none           = ' guibg=NONE'                    " Transparent background
 let s:bg_cursorline     = ' guibg=#202020'                 " cursor line
 let s:bg_search         = ' guibg=#303030'                 " search matches
 let s:bg_incsearch      = ' guibg=#404040'                 " incremental search match
 let s:fg_incsearch      = ' guifg=#CCCC33'                 " incremental search match
+let s:bg_visual         = ' guibg=#2a1a3b'                 " Visual mode selection background
+let s:bg_purple         = ' guibg=#2a1a3b'                 " Popover background color
 
 " Special colors
 let s:sp_red            = ' guisp=#D06A75 ctermfg=167'
@@ -52,14 +47,14 @@ execute 'hi VertSplit' . s:fg . s:bg_none . s:none
 execute 'hi LineNr' . s:fg_dim_white . s:bg_none . s:none
 execute 'hi CursorLineNr' . s:fg_bright_white . s:bg_none . s:none
 execute 'hi CursorLine' . s:bg_cursorline . s:none
-execute 'hi MatchParen' . s:fg_soft_yellow . s:bg_none . s:bold
+execute 'hi MatchParen' . s:fg_bright_white . s:bg_none . s:bold
 execute 'hi NonText' . s:fg_dim_white . s:bg_none . s:none
 execute 'hi WildMenu' . s:fg . s:bg_none . s:none
 execute 'hi Search' . s:fg_bright_white . s:bg_search . s:none
 execute 'hi IncSearch' . s:fg_incsearch . s:bg_incsearch . s:bold
 execute 'hi Folded' . s:fg_bright_white . s:bg_none . s:none
-execute 'hi Pmenu' . s:fg_dim_white . s:bg_none . s:none
-execute 'hi PmenuSel' . s:fg . s:bg_none . s:none
+execute 'hi Pmenu' . s:fg_dim_white . s:bg_purple . s:none
+execute 'hi PmenuSel' . s:fg . s:bg_purple . s:none
 execute 'hi TabLine' . s:fg_dim_white . s:bg_none . s:none
 execute 'hi TabLineFill' . s:fg_dim_white . s:bg_none . s:none
 
@@ -132,4 +127,7 @@ execute 'hi lCursorInsert guifg=NONE guibg=#FF5733'
 
 " Custom highlight groups for parentheses, brackets, and braces
 highlight MatchParen ctermbg=darkred guibg=#225588 guifg=#ddddcc gui=bold
+
+" Visual mode selection background
+highlight Visual guibg=#2a1a3b guifg=NONE ctermbg=57 ctermfg=NONE
 
