@@ -25,7 +25,7 @@ let s:fg_medium_gray    = ' guifg=#F4C430 ctermfg=246'     " keywords
 let s:fg_soft_yellow    = ' guifg=#EADDCA ctermfg=221'     " constants
 let s:fg_gray           = ' guifg=#4A4A4A ctermfg=145'     " keys and properties
 let s:fg_wheat          = ' guifg=#D8D1B7 ctermfg=238'     " types
-let s:fg_dark_gray      = ' guifg=#737373 ctermfg=238'     " inlay hints
+let s:fg_dark_gray      = ' guifg=#8B8000 ctermfg=238'     " inlay hints
 let s:fg_operator       = ' guifg=#4A4A4A ctermfg=54'      " operators 
 let s:bg_none           = ' guibg=NONE'                    " Transparent background
 let s:bg_cursorline     = ' guibg=#202020'                 " cursor line
