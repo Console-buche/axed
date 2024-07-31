@@ -52,7 +52,7 @@ execute 'hi VertSplit' . s:fg . s:bg_none . s:none
 execute 'hi LineNr' . s:fg_dim_white . s:bg_none . s:none
 execute 'hi CursorLineNr' . s:fg_bright_white . s:bg_none . s:none
 execute 'hi CursorLine' . s:bg_cursorline . s:none
-execute 'hi MatchParen' . s:fg_bright_white . s:bg_none . s:bold
+execute 'hi MatchParen' . s:fg_soft_yellow . s:bg_none . s:bold
 execute 'hi NonText' . s:fg_dim_white . s:bg_none . s:none
 execute 'hi WildMenu' . s:fg . s:bg_none . s:none
 execute 'hi Search' . s:fg_bright_white . s:bg_search . s:none
@@ -129,3 +129,7 @@ execute 'hi Cursor guifg=NONE guibg=#FFFF00'
 execute 'hi lCursor guifg=NONE guibg=#FFFF00'
 execute 'hi CursorInsert guifg=NONE guibg=#FF5733'
 execute 'hi lCursorInsert guifg=NONE guibg=#FF5733'
+
+" Custom highlight groups for parentheses, brackets, and braces
+highlight MatchParen ctermbg=darkred guibg=#225588 guifg=#ddddcc gui=bold
+
